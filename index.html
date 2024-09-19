@@ -5,10 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dedicatoria</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Add custom styles here */
+        body {
+            background-color: #f2f2f2; /* light gray background */
+        }
+        .btn-yellow {
+            background-image: linear-gradient(to bottom, #f7dc6f, #ffd700); /* yellow gradient */
+            color: #333; /* dark text color */
+            border-color: #ffd700; /* yellow border color */
+        }
+    </style>
 </head>
 <body class="text-center" style="margin-top: 20%;">
     <h1 class="mb-4">Esta dedicatoria es para ti</h1>
-    <button id="dedicationBtn" class="btn btn-primary btn-lg">Ver dedicatoria</button>
+    <button id="dedicationBtn" class="btn btn-yellow btn-lg">Ver dedicatoria</button>
 
     <script>
         document.getElementById('dedicationBtn').addEventListener('click', function() {
