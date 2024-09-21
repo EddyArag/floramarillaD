@@ -28,18 +28,23 @@
       .btn-yellow:hover {
         opacity: 0.9;
       }
+      img.img-center {
+        max-width: 100%; /* Ajusta el tamaño máximo de la imagen */
+        height: auto;
+        margin-bottom: 20px; /* Espacio entre la imagen y el h1 */
+      }
     </style>
 </head>
 <body>
+    <img src="ramo.png" alt="Ramo de flores" class="img-center">
     <h1 class="mb-4">Esta dedicatoria es para ti</h1>
     <button id="dedicationBtn" class="btn-yellow">Ver dedicatoria</button>
 
     <script>
         document.getElementById('dedicationBtn').addEventListener('click', function() {
-            // Mostrar la dedicatoria (puedes reemplazar este texto con tu contenido)
-            alert("Esta es una dedicatoria especial para ti. ¡Espero que te guste!");
             window.location.href = 'segundo.html'; 
         });
     </script>
 </body>
 </html>
+
