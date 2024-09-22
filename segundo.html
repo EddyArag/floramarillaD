@@ -6,17 +6,34 @@
   <title>Flores y corazones</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="./style.css">
+  <style>
+    #escurridizo {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: top 0.2s, left 0.2s;
+    }
+
+    #escurridizo:hover {
+      cursor: pointer;
+    }
+
+    body {
+      height: 100vh;
+      overflow: hidden;
+      position: relative;
+    }
+  </style>
 </head>
 <body class="container">
 
-   <audio id="musica1" src="audio/flores.mp3" type="audio/mpeg" autoplay volume="0.5"></audio>
-
+  <audio id="musica1" src="audio/flores.mp3" type="audio/mpeg" autoplay volume="0.5"></audio>
 
   <!-- Contenedor para la flor amarilla (se mostrará al hacer clic) -->
   <div id="flowerContainer" class="text-center mt-4" style="display:none;">
     <img src="https://via.placeholder.com/150/FFD700/000000?text=Flor+Amarilla" alt="Flor Amarilla" class="img-fluid">
   </div>
-  <div class="night"></div>
   <div class="flowers">
     <div class="flower flower--1">
       <div class="flower__leafs flower__leafs--1">
@@ -337,6 +354,7 @@
         <div class="leaf leaf--3"></div>
       </div>
     </div>
+    <button id="escurridizo" class="btn btn-warning">Click para que te de dinero</button>
   </div>
   <script src="main.js"></script>
   <div class="bubbles">
@@ -442,6 +460,20 @@
 </body>
 <!-- partial -->
   <script  src="./script.js"></script>
+  <script>
+    const boton = document.getElementById('escurridizo');
+
+    boton.addEventListener('mouseover', function() {
+      const maxWidth = window.innerWidth - boton.offsetWidth;
+      const maxHeight = window.innerHeight - boton.offsetHeight;
+
+      const randomX = Math.floor(Math.random() * maxWidth);
+      const randomY = Math.floor(Math.random() * maxHeight);
+
+      boton.style.left = randomX + 'px';
+      boton.style.top = randomY + 'px';
+    });
+  </script>
 
 
 
