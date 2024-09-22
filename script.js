@@ -5,7 +5,7 @@ onload = () => {
   setTimeout(function() {
     // Muestra el cuadro con la pregunta
     $("#pregunta-container").fadeIn();
-  }, 3000); // Ajusta el tiempo según la duración de tu animación
+  }, 20000); // Ajusta el tiempo según la duración de tu animación
 
   // Agrega evento de clic al botón "NO"
   $("#no-button").on("click", function() {
