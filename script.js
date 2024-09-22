@@ -1,4 +1,4 @@
-$(document).ready(function() {
+onload = () => {
   document.body.classList.remove("container");
 
   // Espera a que la animación haya cargado
@@ -22,4 +22,4 @@ $(document).ready(function() {
       "top": y + "px"
     });
   });
-});
+};
