@@ -1,51 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dedicatoria</title>
-    <style>
-      body {
-        background-image: linear-gradient(to bottom, #15171a, #32393f); /* fondo degradado azul */
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 100vh;
-        margin: 0;
-        font-family: sans-serif;
-      }
-      .btn-yellow {
-        background-image: linear-gradient(to bottom, #f7dc6f, #ddc11f); /* yellow gradient */
-        color: #333; /* dark text color */
-        border: none;
-        padding: 15px 30px;
-        border-radius: 5px;
-        font-size: 1.2rem;
-        cursor: pointer;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      }
-      .btn-yellow:hover {
-        opacity: 0.9;
-      }
-      img.img-center {
-        max-width: 30%; /* Ajusta el tamaño máximo de la imagen */
-        height: 35%;
-        margin-bottom: 10px; /* Espacio entre la imagen y el h1 */
-      }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dedicatoria</title>
+  <style>
+    body {
+      background-image: linear-gradient(to bottom, #15171a, #32393f);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      font-family: sans-serif;
+    }
+    .btn-yellow {
+      background-image: linear-gradient(to bottom, #f7dc6f, #ddc11f);
+      color: #333;
+      border: none;
+      padding: 15px 30px;
+      border-radius: 5px;
+      font-size: 1.2rem;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .btn-yellow:hover {
+      opacity: 0.9;
+    }
+    img.img-center {
+      max-width: 30%;
+      height: auto;
+      margin-bottom: 10px;
+    }
+    .gojo-message {
+      color: #b0b0b0;
+      margin-top: 20px;
+      font-size: 0.9rem;
+    }
+  </style>
 </head>
 <body>
-    <img src="ramo.png" alt="Ramo de flores" class="img-center">
-    <h1 class="mb-4">Esta dedicatoria es para ti</h1>
-    <button id="dedicationBtn" class="btn-yellow">Ver dedicatoria</button>
+  <img src="ramo.png" alt="Ramo de flores" class="img-center">
+  <h1 class="mb-4">Esta dedicatoria es para ti</h1>
+  <button id="dedicationBtn" class="btn-yellow">Ver dedicatoria</button>
+  <p class="gojo-message">"Pero estoy a la mitad..."</p>
 
-    <script>
-        document.getElementById('dedicationBtn').addEventListener('click', function() {
-            alert("Esta es una dedicatoria especial para ti. ¡Espero que te guste!");
-            window.location.href = 'segundo.html'; 
-        });
-    </script>
+  <script>
+    document.getElementById('dedicationBtn').addEventListener('click', function () {
+      alert("Esta es una dedicatoria especial para ti. ¡Espero que te guste!");
+      window.location.href = 'segundo.html';
+    });
+  </script>
 </body>
 </html>
-
