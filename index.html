@@ -37,6 +37,7 @@
       color: #b0b0b0;
       margin-top: 20px;
       font-size: 0.9rem;
+      font-style: italic;
     }
   </style>
 </head>
@@ -44,11 +45,17 @@
   <img src="ramo.png" alt="Ramo de flores" class="img-center">
   <h1 class="mb-4">Esta dedicatoria es para ti</h1>
   <button id="dedicationBtn" class="btn-yellow">Ver dedicatoria</button>
-  <p class="gojo-message">"Pero estoy a la mitad..."</p>
+  <p class="gojo-message">"Pero estoy a la mitad..." – Gojo Satoru</p>
 
   <script>
     document.getElementById('dedicationBtn').addEventListener('click', function () {
+      // Primera alerta: referencia al anime
+      alert('「でも俺は もう半分にされている」\n"Pero ya me han partido a la mitad..." – Gojo Satoru');
+
+      // Segunda alerta: mensaje especial
       alert("Esta es una dedicatoria especial para ti. ¡Espero que te guste!");
+
+      // Redirección
       window.location.href = 'segundo.html';
     });
   </script>
